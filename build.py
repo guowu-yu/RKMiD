@@ -170,6 +170,10 @@ RUANKAO_ROADMAP_ORDER = [
     "peizhi-biangan", # 配置与变更管理
     "falv-biaozhun-yingyu",    # 法律法规·标准规范·专业英语
     "anli",           # 案例分析实战（下午题）
+    "zhenti",         # 历年真题与考情分析
+    "siji",           # 速记口诀与高频考点
+    "yihun",          # 易混易错点辨析
+    "moni",           # 全真模拟试卷
 ]
 
 
@@ -252,17 +256,22 @@ def roadmap_floats(topics: list[dict], href_prefix: str = "topics/") -> str:
 # 子专题在父页内的展示顺序（按建议学习脉络），未在表内的排在末尾
 SUBORDER: dict[str, list[str]] = {
     "xinxihua": ["xinxihua-gaihe", "xinxihua-dianzi", "xinxihua-zhili", "xinxihua-chengshi"],
-    "itjishu": ["it-wangluo", "it-shujuku", "it-xinjishu", "it-anquan"],
-    "xm-jichu": ["xm-wuguocheng", "xm-shidalingyu", "xm-zuzhi"],
+    "itjishu": ["it-wangluo", "it-shujuku", "it-xinjishu", "it-anquan", "it-ruanjian"],
+    "xm-jichu": ["xm-wuguocheng", "xm-shidalingyu", "xm-zuzhi", "xm-shengmingzhouqi"],
     "lixiang": ["lx-kexingxing", "lx-zhaotoubiao"],
     "zhengti-fanwei": ["zf-zhengti", "zf-fanwei", "zf-wbs"],
-    "jindu-chengben": ["jc-wangluotu", "jc-guanjianlujing", "jc-zhiying", "jc-ziyuan"],
+    "jindu-chengben": ["jc-wangluotu", "jc-guanjianlujing", "jc-zhiying", "jc-ziyuan", "jc-pert"],
     "zhiliang-renli-goutong": ["zrg-zhiliang", "zrg-renli", "zrg-goutong"],
     "fengxian-ganshizhe": ["fg-fengxian", "fg-ganshizhe"],
     "caigou-hetong": ["ch-caigou", "ch-hetong"],
-    "peizhi-biangan": ["pb-peizhi", "pb-biangan"],
+    "peizhi-biangan": ["pb-peizhi", "pb-biangan", "pb-banben"],
     "falv-biaozhun-yingyu": ["fby-zhaotoubiaofa", "fby-biaozhun", "fby-yingyu"],
     "anli": ["anli-jisuan", "anli-zhaocuo", "anli-yingyong"],
+    "zonglan": ["zonglan-beikao"],
+    "zhenti": ["zhenti-kaoshirenwu", "zhenti-shangwu", "zhenti-xiawu", "zhenti-jisuan"],
+    "siji": ["siji-koujue", "siji-gongshi", "siji-gaopin"],
+    "yihun": ["yihun-concepts", "yihun-hetong", "yihun-fengxian"],
+    "moni": ["moni-1-shangwu", "moni-1-xiawu", "moni-2-shangwu", "moni-2-xiawu"],
 }
 
 
