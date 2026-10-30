@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>软考知径 · 2027 软考中级备考知识园地</title>
+    <meta name="description" content="软考知径 — 2027 软考中级（系统集成项目管理工程师）系统精讲与备考笔记园地。" />
+    <meta name="author" content="2027 备考生" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&family=Orbitron:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css?v=20261031" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">RK</span>
+        <span class="brand-text">
+          <strong>软考知径</strong>
+          <em>RK 2027 · 系统集成</em>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#topics">专题</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media" role="img" aria-label="数据中心与网络拓扑"></div>
+        <div class="hero-veil"></div>
+        <div class="hero-content">
+          <p class="hero-kicker">2027 · 计算机技术与软件专业技术资格（水平）考试 · 中级</p>
+          <h1 class="hero-brand">软考知径</h1>
+          <p class="hero-lead">把系统集成项目管理工程师的考点，沉淀成可检索、可勾选进度的备考地图。</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#topics">进入专题库</a>
+            <span class="hero-author">作者 · 2027 备考生</span>
+          </div>
+          <form class="search-panel" id="search-form" role="search" autocomplete="off">
+            <label class="sr-only" for="search-input">搜索知识点</label>
+            <input
+              id="search-input"
+              type="search"
+              name="q"
+              placeholder="搜索专题、标签或关键词，例如：挣值管理、关键路径、WBS、招投标法、十大知识领域…"
+              enterkeyhint="search"
+            />
+            <button type="submit" class="btn btn-search">搜索</button>
+          </form>
+          <div id="search-results" class="search-results" hidden></div>
+        </div>
+      </section>
+
+      <section class="section topics-section" id="topics">
+        <div class="section-head">
+          <h2>专题星图</h2>
+          <p>当前共 <strong>{{TOPIC_COUNT}}</strong> 篇 · 系统集成系统精讲 · 子专题 · 案例实战</p>
+        </div>
+        <div class="filter-panel">
+          <div class="filter-bar" id="tag-filters"></div>
+          <button
+            type="button"
+            class="filter-expand"
+            id="tag-filters-toggle"
+            hidden
+            aria-expanded="false"
+          >
+            展开全部
+          </button>
+        </div>
+        <div class="topic-grid" id="topic-grid">
+          {{TOPIC_CARDS}}
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="about-panel">
+          <div class="about-copy">
+            <h2>关于软考知径</h2>
+            <p>
+              这里是为 2027 年软考中级（系统集成项目管理工程师）打造的个人知识园地：按「信息化 → 信息技术 → 项目管理基础 → 立项 → 整体与范围 → 进度与成本 → 质量/人资/沟通 → 风险/干系人 → 采购/合同 → 配置/变更 → 法律法规/英语 → 案例实战」的系统顺序，逐章沉淀精讲笔记、计算公式、易错点与自测清单。
+              每章一页，沉淀在本地与 GitHub，便于长期回顾与检索。
+            </p>
+          </div>
+          <ul class="about-stats">
+            <li><span>目标</span><strong>2027 软考中级</strong></li>
+            <li><span>方向</span><strong>系统集成项目管理</strong></li>
+            <li><span>形态</span><strong>专题网页</strong></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> 软考知径 · 2027 备考生</p>
+      <p class="muted">软考中级备考笔记与整理 · 托管于 GitHub Pages</p>
+    </footer>
+
+    {{ROADMAP_FLOAT}}
+
+    <script src="assets/js/main.js?v=20261031" type="module"></script>
+  </body>
+</html>
